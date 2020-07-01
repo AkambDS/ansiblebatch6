@@ -28,7 +28,7 @@ sts: linux
   - name: create index.html on ubuntu
     template:
       src: index.html.j2
-      dest: /var/www/html/index.html
+      dest: index.html
     notify: restart apache2
     when: ansible_os_family == "Debian"
   - name: create index.html on centos
